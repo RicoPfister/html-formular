@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registration forms</title>
+</head>
+<body>
+
+    <div id="stage"> 
+
+     <!-- HTML/CSS-Variante -->
+
+    <h2>Registrierung - Schritt 1/2</h2>
+
+     <!-- Data fields -->
+
+    <form action="confirmation.html" id="registrationForm" name="registrationForm" method="get" onsubmit="return validateForm()""> 
+    <label for="gender">Anrede</label><br>
+    <select id="gender" name="gender">
+        <option value=""></option>
+        <option value="Frau">Frau</option>
+        <option value="Herr">Herr</option>        
+    </select><br><br>
+    <label for="firstName">Vorname*</label><br>
+    <input type="text" id="firstName" name="firstName" maxlength="20" required></input><br><br>
+    <label for="lastName">Nachname*</label><br>
+    <input type="text" id="lastName" name="lastName" maxlength="20" required></input><br><br>
+    <label for="eMail">E-Mail*</label><br>
+    <input type="text" id="eMail" name="eMail"></input><br><br>
+    <label for="age">Alter</label><br>
+    <input type="number" id="age" name="age" pattern="[0-9]+" min="0" max="999" required></input><br><br>
+
+    <label for="colorPick">Lieblingsfarbe / Personalität</label><br>
+    
+    <div id="colorPersPicker"> 
+    
+    <input type="color" id="colorPicker" name="colorPicker"><br><br>
+    <select id="personality" name="personality">
+      <option value=""></option>
+      <option value="calm">Ruhig</option>
+      <option value="wild">Wild</option>
+    </select>
+
+    </div><br>
+
+     <label for="organisation">Organisation</label><br>
+    <input type="text" id="organisation" name="organisation" value="Opportunity" readonly></label><br><br>
+    <p>*Pflichtfelder</p>
+    
+    <!-- Buttons -->
+    
+    <input class="ok" type="submit" id="sendInput" value="Weiter">
+    <input id="warning" type="reset" value="Form-Reset">
+    <button id="warning" type="button" onclick="clearData()">JS-Reset</button>
+    <button id="dummy" type="button" onclick="regGen()">Fake-Reg-Gen<sup>TM</sup></button>
+    </form>
+
+    <hr> 
+
+    <script src="js/form.js"></script>  
+</body>
+</html>

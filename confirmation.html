@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registration confirmation</title>
+</head>
+<body>
+
+<div id="stage"> 
+
+<h2>Registrierung - Schritt 2/2</h2><br>
+
+<p>Kontrolliere bitte deine Angaben:</p><br>
+
+<!-- Main container -->
+
+<div id="confirmationDataContainer">
+
+<!-- row 1 - canvas -->
+
+<div id="confirmationDataLogo">
+  <canvas id="canvas"></canvas>
+</div>
+
+<!-- row 2  -->
+
+<div id="confirmationDataKey">
+  <p>Name:</p>
+  <p>Alter:</p>
+  <p>E-Mail:</p>
+  <p>Organisation:</p>
+</div>
+
+<!-- row 3 -->
+
+<div id="confirmationDataValue">
+  <p id="confirmationData-name"></p>
+  <p id="confirmationData-age"></p>
+  <p id="confirmationData-eMail"></p>
+  <p id="confirmationData-organisation"></p>
+</div>
+</div>
+
+<!-- buttons -->
+
+<div style="display: flex">
+<button type="button" id="page2Button" class="ok" onclick="sendData()">Registrieren</button>
+<button type="button" id="page2Button" onclick="fillForm()">Änderen</button>
+</form>
+</div>
+  
+<script src="js/form.js"></script>
+</div>
+</body>
+</html>

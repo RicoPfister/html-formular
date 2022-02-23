@@ -1,0 +1,51 @@
+#stage {
+    margin: 30px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.ok {
+    background-color: lightgreen;
+}
+
+#warning {
+    background-color:lightsalmon;
+}
+
+#dummy {
+    color: white;
+    background-color: black;
+}
+
+#page2Button {
+    margin:5px;
+    margin-left:0;
+}
+
+#confirmationDataContainer {
+    display: flex;
+}
+
+#confirmationDataKey {
+    width: 110px;
+    font-weight: bold;
+}
+
+#confirmationDataValue {
+    width: 150px;
+}
+
+#confirmationDataLogo {
+    width: 150px;
+}
+
+#colorPersPicker {
+    display: flex;
+    height: 25px;
+}
+
+#colorPicker {
+    margin-right: 10px;
+}
