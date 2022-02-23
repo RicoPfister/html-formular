@@ -141,6 +141,7 @@ if(sessionStorage.getItem("colorPicker")){
 if(sessionStorage.getItem("personality")){
     document.getElementById("personality").value = `${sessionStorage.getItem("personality")}`;
 }
+
 // profile wild
 
 }
@@ -282,7 +283,9 @@ function profileCalm(){
     ctx.stroke();
 }
 
-if(sessionStorage.getItem("personality") === "wild") profileWild();
+// Profilauswahl
+
+if(sessionStorage.getItem("personality") === "wild" || sessionStorage.getItem("personality") === "") profileWild();
 else profileCalm();
 
 function getRandomColor() {
